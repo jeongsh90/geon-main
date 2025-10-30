@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/font.css" />
+	<link rel="stylesheet" href="./css/common.css" />
+	<link rel="stylesheet" href="./css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <title>main</title>
+</head>
+<body>
+    <div class="bg-item"> <span><img src="img/bg-item01.png" alt=""></span> </div>
+    <canvas id="fluid"></canvas>
+    <div class="fix">
+        <div class="Frame">
+            <div class="bar top"></div>
+            <div class="bar bottom"></div>
+            <div class="bar left"></div>
+            <div class="bar right"></div>
+            <div class="corner left top"></div>
+            <div class="corner right top"></div>
+            <div class="corner left bottom"></div>
+            <div class="corner right bottom"></div>
+        </div>
+    
+        <div class="quick">
+            <ul>
+                <li><a href="javascript:void(0)" class=""><i class="icon pin"></i><span>오시는길</span></a></li>
+                <li><a href="javascript:void(0)" class=""><i class="icon file"></i><span>회사소개서 다운로드</span></a></li>
+                <li><a href="javascript:void(0)" class=""><i class="icon mail"></i><span>문의하기</span></a></li>
+            </ul>
+        </div>
+    
+        <div class="scroll-down">
+            <div>
+                <p>SCROLL DOWN</p>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="page-btn-group">
+            <a href="" class="page-prev"><i class="icon arrow-top"></i></a>
+            <a href="" class="page-next"><i class="icon arrow-bottom"></i></a>
+        </div>
+
+        <div class="sec-nav">
+            <ul>
+                <li><a href="javascript:void(0)" data-target="#sec1">MAIN</a></li>
+                <li><a href="javascript:void(0)" data-target="#sec2">BUSINESS</a></li>
+                <li><a href="javascript:void(0)" data-target="#sec3">WE ARE</a></li>
+                <li><a href="javascript:void(0)" data-target="#sec4">CLIENT</a></li>
+                <li><a href="javascript:void(0)" data-target="#footer">INFO</a></li>
+            </ul>
+        </div>
+
+        <header class="header">
+            <a href="javascript:void(0)" class="logo"> <img src="img/logo.svg" alt=""> </a>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="">ABOUT</a>
+                        <div class="depth2">
+                            <h3>ABOUT</h3>
+                            <ul>
+                                <li><a href=""><span>회사연혁</span><i class="icon link-arrow"></i></a></li>
+                                <li><a href=""><span>CI</span><i class="icon link-arrow"></i></a></li>
+                                <li><a href=""><span>위치/연락처</span><i class="icon link-arrow"></i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">BUSINESS</a>
+                        <div class="depth2">
+                            <h3>BUSINESS</h3>
+                            <ul>
+                                <li><a href=""><span>신기술분야</span><i class="icon link-arrow"></i></a></li>
+                                <li><a href=""><span>DB분야</span><i class="icon link-arrow"></i></a></li>
+                                <li><a href=""><span>SI/SM분야</span><i class="icon link-arrow"></i></a></li>
+                                <li><a href=""><span>컨설팅분야</span><i class="icon link-arrow"></i></a></li>
+                                <li><a href=""><span>측량분야</span><i class="icon link-arrow"></i></a></li>
+                                <li><a href=""><span>연구개발분야</span><i class="icon link-arrow"></i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">RECRUIMENT</a>
+                        <div class="depth2">
+                            <h3>RECRUIMENT</h3>
+                            <ul>
+                                <li><a href=""><span>인재채용</span><i class="icon link-arrow"></i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <!-- <div class="site-map-btn"> <div class=""><span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span></div> </div> -->
+            </div>
+        </header>
+        <div class="scroll-bar" id="scroll-bar"> <span></span> </div>
+    </div>
+    <div class="main-wrap">
+        <div class="smooth-wrapper">
+            <!-- content -->
+            <div class="smooth-content">
+                
+                <section class="sec sec1" id="sec1">
+                    <div class="bg-video"><video id="bgVideo" class="bg-video" src="img/sec1-bg.mp4" type="video/mp4" autoplay muted loop playsinline preload="auto"></video></div>
+                    <div class="container">
+                        <div class="content">
+                            <h2>
+                                <span class="desc1">기술 비즈니스 전문기업</span>
+                                <span class="desc2">공간정보 분야의<br>선두주자 지오앤</span>
+                            </h2>
+                            <p>도로대장 통합 구축‧관리, 정밀도로지도 기반 디지털 트윈, 3차원 가상도로 구축 등 디지털 SOC 관리 선도기업으로서 실세계 데이터 취득에서부터 가공, 융‧복합, 서비스 제공과 다양한 공간정보 콘텐츠, 솔루션 개발을 위해 매진하고 있습니다.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sec intro" id="intro1">
+                    <p>
+                        <span>지오앤은</span>
+                        <span>다가오는 시대를 위한 차세대 공간정보 구축의 선두주자 입니다.</span>
+                        <span>스마트시대, 많은 것이 위치정보화 되는 세상, 상상이 현실이 되는 미래를</span>
+                        <span>고객과 함께 열어갑니다.</span>
+                    </p>
+                </section>
+
+                <section class="sec sec2" id="sec2">
+                    <div class="container">
+                        <div class="content-txt">
+                            <h2>
+                                <span class="desc1">BUSINESS</span>
+                                <span class="desc2">사업분야</span>
+                            </h2>
+                            <a href=""><span>MORE VIEW</span><i class="icon link-arrow"></i></a>
+                        </div>
+                        <div class="content-list">
+                            <div class="link-wrap">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <div class="txt">
+                                                <h3>
+                                                    <span class="desc1">new technology field</span>
+                                                    <span class="desc2">신기술분야</span>
+                                                </h3>
+                                                <ul>
+                                                    <li>MMS</li>
+                                                    <li>드론</li>
+                                                </ul>
+                                            </div>
+                                            <div class="more">
+                                                <span>MORE VIEW</span>
+                                                <i class="icon link-arrow"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="">
+                                            <div class="txt">
+                                                <h3>
+                                                    <span class="desc1">DB field</span>
+                                                    <span class="desc2">DB분야</span>
+                                                </h3>
+                                                <ul>
+                                                    <li>디지털 트윈 기반 도로정보 통합 구축/관리</li>
+                                                    <li>AI 학습데이터 구축 및 알고리즘</li>
+                                                    <li>공간정보 구축</li>
+                                                </ul>
+                                            </div>
+                                            <div class="more">
+                                                <span>MORE VIEW</span>
+                                                <i class="icon link-arrow"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="">
+                                            <div class="txt">
+                                                <h3>
+                                                    <span class="desc1">SI/SM field</span>
+                                                    <span class="desc2">SI/SM분야</span>
+                                                </h3>
+                                                <ul>
+                                                    <li>버스운행정보시스템</li>
+                                                    <li>3차원 가상도로 시뮬레이션 시스템</li>
+                                                    <li>도로변경정보 수집시스템 유지관리</li>
+                                                </ul>
+                                            </div>
+                                            <div class="more">
+                                                <span>MORE VIEW</span>
+                                                <i class="icon link-arrow"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="">
+                                            <div class="txt">
+                                                <h3>
+                                                    <span class="desc1">Consulting field</span>
+                                                    <span class="desc2">컨설팅분야</span>
+                                                </h3>
+                                                <ul>
+                                                    <li>비전 및 수행 전략 수립</li>
+                                                </ul>
+                                            </div>
+                                            <div class="more">
+                                                <span>MORE VIEW</span>
+                                                <i class="icon link-arrow"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="">
+                                            <div class="txt">
+                                                <h3>
+                                                    <span class="desc1">the field of surveying</span>
+                                                    <span class="desc2">측량분야</span>
+                                                </h3>
+                                                <ul>
+                                                    <li><li>시설물 조사/측량</li></li>
+                                                    
+                                                </ul>
+                                            </div>
+                                            <div class="more">
+                                                <span>MORE VIEW</span>
+                                                <i class="icon link-arrow"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="">
+                                            <div class="txt">
+                                                <h3>
+                                                    <span class="desc1">R&D field</span>
+                                                    <span class="desc2">연구개발분야</span>
+                                                </h3>
+                                                <ul>
+                                                    <li>고정밀 Hybrid Map 제작, 실내 데이터 프로세싱 공간정보 분석, AI 탐지기술 개발</li>
+                                                </ul>
+                                            </div>
+                                            <div class="more">
+                                                <span>MORE VIEW</span>
+                                                <i class="icon link-arrow"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sec intro" id="intro2">
+                    <p>
+                        <span>지오앤은</span>
+                        <span>지도제작, LiDAR 및 MMS 데이터 구축, 지오코딩 등</span>
+                        <span>전통 공간정보기술을 토대로 자율주행지도, 실내공간정보, 고정밀지도 및</span>
+                        <span>고객의 목적에 맞는 인터랙티브한 지도플랫폼을 제공합니다.</span>
+                    </p>
+                </section>
+
+                <section class="sec sec3" id="sec3">
+                    <div class="container">
+                        <div class="content-txt">
+                            <h3>
+                                <span class="desc1">WE ARE</span>
+                                <span class="desc2">WE ARE GEO&</span>
+                            </h3>
+                        </div>
+                        <div class="content-card">
+                            <div class="card">
+                                <i class="icon building"></i>
+                                <h3>설립일</h3>
+                                <p><span>2017</span>년 <span>7</span>월 <span>21</span>일</p>
+                            </div>
+                            <div class="card">
+                                <i class="icon rocket"></i>
+                                <h3>대표이사</h3>
+                                <p>권찬오</p>
+                            </div>
+                            <div class="card">
+                                <i class="icon chart-line"></i>
+                                <h3>매출액</h3>
+                                <p><span>60</span>억 <span>3,647</span>만원</p>
+                            </div>
+                            <div class="card">
+                                <i class="icon star"></i>
+                                <h3>GIS 특허보유</h3>
+                                <p><span>13</span>건</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="sec sec4" id="sec4">
+                    <div class="container">
+                        <div class="content-txt">
+                            <h3>
+                                <span class="desc1">PARTNER</span>
+                                <span class="desc2">주요 고객사</span>
+                            </h3>
+                            <a href=""><span>MORE VIEW</span><i class="icon link-arrow"></i></a>
+                        </div>
+                        <div class="content-banner">
+                            <div class="banner-wrap">
+                                <div class="banner-group">
+                                    <ul>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="banner-group">
+                                    <ul>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="banner-group">
+                                    <ul>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        <li><a href="" targat="_blank"><img src="img/logo.svg"></a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="sec footer" id="footer">
+                    <div class="container">
+                        <div class="content-left">
+                            <a href="" class="logo"><img src="img/logo.svg" alt=""></a>
+                            <ul>
+                                <li><span class="label">회사명</span> <p>주식회사 지오앤</p></li>
+                                <li><span class="label">사업자등록번호</span> <p>474-88-00887</p></li>
+                                <li><span class="label">대표이사</span> <p>권찬오</p></li>
+                                <li><span class="label">Tel</span> <p>031-978-0719</p></li>
+                                <li><span class="label">Fax</span> <p>031-978-0719</p></li>
+                                <li><span class="label">본사</span> <p>강원도 횡성군 횡성읍 문화체육로 52, 301호</p></li>
+                                <li><span class="label">세종지사</span> <p>세종특별자치시 집현중앙7로 6, A동 1114호 세종대명벨리온지식산업센터</p></li>
+                                <li><span class="label">연구소</span> <p>경기도 고양시 덕양구 토당로42번길 21, 허브온빌딩</p></li>
+                            </ul>
+                        </div>
+                        <div class="content-right">
+                            <div class="menu">
+                                <ul class="menu-group">
+                                    <li>
+                                        <a href="">ABOUT</a>
+                                        <ul>
+                                            <li><a href="">회사연혁</a></li>
+                                            <li><a href="">CI</a></li>
+                                            <li><a href="">위치/연락처</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">BUSINESS</a>
+                                        <ul>
+                                            <li><a href="">신기술분야</a></li>
+                                            <li><a href="">DB분야</a></li>
+                                            <li><a href="">SI/SM분야</a></li>
+                                            <li><a href="">컨설팅분야</a></li>
+                                            <li><a href="">측량분야</a></li>
+                                            <li><a href="">연구개발분야</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">RECRUIMENT</a>
+                                        <ul>
+                                            <li><a href="">인재채용</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="policy-links">
+                                    <li><a href="">개인정보처리방침</a></li>
+                                    <li><a href="">이용약관</a></li>
+                                </ul>
+                            </div>
+                            <div class="bottom-group">
+                                <p class="copy">© (주)지오앤. All rights reserved.</p>
+                                <a href="javascript:void(0)" class=""><i class="icon file"></i><span>회사소개서 다운로드</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/smoke-cursor.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollSmoother.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/scroll-bar.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

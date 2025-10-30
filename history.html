@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/font.css" />
+	<link rel="stylesheet" href="./css/common.css" />
+	<link rel="stylesheet" href="./css/sub.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <title>회사연혁</title>
+</head>
+<body class="history">
+    <div class="bg-item"> <span><img src="img/bg-item01.png" alt=""></span> </div>
+    <canvas id="fluid"></canvas>
+    <div class="fix">
+        <div class="Frame">
+            <div class="bar top"></div>
+            <div class="bar bottom"></div>
+            <div class="bar left"></div>
+            <div class="bar right"></div>
+            <div class="corner left top"></div>
+            <div class="corner right top"></div>
+            <div class="corner left bottom"></div>
+            <div class="corner right bottom"></div>
+        </div>
+    
+        <div class="quick">
+            <ul>
+                <li><a href="javascript:void(0)" class=""><i class="icon pin"></i><span>오시는길</span></a></li>
+                <li><a href="javascript:void(0)" class=""><i class="icon file"></i><span>회사소개서 다운로드</span></a></li>
+                <li><a href="javascript:void(0)" class=""><i class="icon mail"></i><span>문의하기</span></a></li>
+            </ul>
+        </div>
+    
+        <div class="scroll-down">
+            <div>
+                <p>SCROLL DOWN</p>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="page-btn-group">
+            <a href="" class="page-prev"><i class="icon arrow-top"></i></a>
+            <a href="" class="page-next"><i class="icon arrow-bottom"></i></a>
+        </div>
+
+        <header class="header">
+            <a href="javascript:void(0)" class="logo"> <img src="img/logo.svg" alt=""> </a>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="">ABOUT</a>
+                        <div class="depth2">
+                            <h3>ABOUT</h3>
+                            <ul>
+                                <li><a href=""><span>회사연혁</span><i class="icon link-arrow"></i></a></li>
+                                <li><a href=""><span>CI</span><i class="icon link-arrow"></i></a></li>
+                                <li><a href=""><span>위치/연락처</span><i class="icon link-arrow"></i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">BUSINESS</a>
+                        <div class="depth2">
+                            <h3>BUSINESS</h3>
+                            <ul>
+                                <li><a href=""><span>신기술분야</span><i class="icon link-arrow"></i></a></li>
+                                <li><a href=""><span>DB분야</span><i class="icon link-arrow"></i></a></li>
+                                <li><a href=""><span>SI/SM분야</span><i class="icon link-arrow"></i></a></li>
+                                <li><a href=""><span>컨설팅분야</span><i class="icon link-arrow"></i></a></li>
+                                <li><a href=""><span>측량분야</span><i class="icon link-arrow"></i></a></li>
+                                <li><a href=""><span>연구개발분야</span><i class="icon link-arrow"></i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">RECRUIMENT</a>
+                        <div class="depth2">
+                            <h3>RECRUIMENT</h3>
+                            <ul>
+                                <li><a href=""><span>인재채용</span><i class="icon link-arrow"></i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <!-- <div class="site-map-btn"> <div class=""><span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span></div> </div> -->
+            </div>
+        </header>
+        <div class="scroll-bar" id="scroll-bar"> <span></span> </div>
+    </div>
+    <div class="sub-wrap">
+        <div class="smooth-wrapper">
+            <!-- content -->
+            <div class="smooth-content">
+                <section class="sec visual">
+                    <div class="container">
+                        <h2>
+                            <span class="desc1">ABOUT</span>
+                            <span class="desc2">회사연혁</span>
+                        </h2>
+                    </div>
+                </section>
+
+                <section class="sec intro" id="intro1">
+                    <p>
+                        <span>지오앤의 발자취</span>
+                        <span>끊임없는 도전과 혁신으로 성장해온 시간</span>
+                        <span>공간정보 분야의 미래를 향한 노력의 기록</span>
+                        <span>우리가 걸어온 길을 소개합니다.</span>
+                    </p>
+                </section>
+
+                <section class="sec sec2 history-list">
+                    <div class="container">
+                        <div class="content-year">
+                            <h3>
+                                <span class="year">2023</span>
+                                <span class="tilde">~</span>
+                                <span class="year">2020</span>
+                            </h3>
+                        </div>
+                        <div class="content-info">
+                            <div class="item-wrap">
+                                <div class="item">
+                                    <h4>2023</h4>
+                                    <ul>
+                                        <li><span class="month">5</span> <p>고용노동부 선정 강소기업<br> 저작권 등록: 재난정보품질검사 S/W</p></li>
+                                        <li><span class="month">4</span> <p>벤처기업 갱신</p></li>
+                                    </ul>
+                                </div>
+
+                                <div class="item">
+                                    <h4>2022</h4>
+                                    <ul>
+                                        <li><span class="month">4</span><p>정보통신공사업 등록</p> </li>
+                                        <li><span class="month">1</span><p>일학습병행기업 인증</p> </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <h4>2021</h4>
+                                    <ul>
+                                        <li><span class="month">12</span> <p>특허 등록: 차량용 측위 장치</p></li>
+                                        <li><span class="month">11</span> <p>강원도 유망중소기업 인증</p></li>
+                                        <li><span class="month">8</span> <p>창업기업확인서 인증</p></li>
+                                        <li><span class="month">7</span> <p>특허등록: 드론을 이용한 오류 정보의 보정 처리가 가능한 영상처리시스템 외 11건</p></li>
+                                        <li><span class="month">4</span> <p>측지측량업 등록</p></li>
+                                        <li><span class="month">3</span> <p>저작권 등록: IoT 교통안전시설 유지보수 장비 SW FW <br> 저작권 등록: 유지관리용 현장 IoT 정보관리 SW App</p></li>
+                                        <li><span class="month">1</span> <p>경영혁신형 중소기업(Main-Biz)인증</p></li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <h4>2020</h4>
+                                    <ul>
+                                        <li> <span class="month">6</span> <p>측량업 등록 : 공간영상도화업(제07-000106호)</p> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sec sec1 history-list">
+                    <div class="container">
+                        <div class="content-year">
+                            <h3>
+                                <span class="year">2019</span>
+                                <span class="tilde">~</span>
+                                <span class="year">2017</span>
+                            </h3>
+                        </div>
+                        <div class="content-info">
+                            <div class="item-wrap">
+                                <div class="item">
+                                    <h4>2019</h4>
+                                    <ul>
+                                        <li><span class="month">4</span> <p>건설엔지니어링업(구 건설기술용역업) 등록<br> 저작권 등록: Tile Map Viewer</p></li>
+                                        <li><span class="month">3</span> <p>측량업 등록 : 영상처리업(제08-000117호)</p></li>
+                                    </ul>
+                                </div>
+
+                                <div class="item">
+                                    <h4>2018</h4>
+                                    <ul>
+                                        <li><span class="month">12</span> <p>가족친화 기업인증</p></li>
+                                        <li><span class="month">11</span> <p>측량업 등록 : 지도제작업</p></li>
+                                        <li><span class="month">9</span> <p>초경량비행장치사용사업 등록</p></li>
+                                        <li><span class="month">8</span> <p>측량업 등록 : 지하시설물측량업<br> 벤처기업 등록(중진공)</p></li>
+                                        <li><span class="month">7</span> <p>측량업 등록 : 공공측량업</p></li>
+                                        <li><span class="month">5</span> <p>저작권 등록: Map Auto Capture, 국공유재산 현장조사시스템</p></li>
+                                        <li><span class="month">4</span> <p>연구개발서비스업 등록(과학기술정보통신부)</p></li>
+                                        <li><span class="month">3</span> <p>측량업 등록 : 수치지도제작업</p></li>
+                                        <li><span class="month">1</span> <p>기업부설연구소 설립</p></li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <h4>2017</h4>
+                                    <ul>
+                                        <li><span class="month">7</span> <p>(주)지오앤 설립</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sec footer" id="footer">
+                    <div class="container">
+                        <div class="content-left">
+                            <a href="" class="logo"><img src="img/logo.svg" alt=""></a>
+                            <ul>
+                                <li><span class="label">회사명</span> <p>주식회사 지오앤</p></li>
+                                <li><span class="label">사업자등록번호</span> <p>474-88-00887</p></li>
+                                <li><span class="label">대표이사</span> <p>권찬오</p></li>
+                                <li><span class="label">Tel</span> <p>031-978-0719</p></li>
+                                <li><span class="label">Fax</span> <p>031-978-0719</p></li>
+                                <li><span class="label">본사</span> <p>강원도 횡성군 횡성읍 문화체육로 52, 301호</p></li>
+                                <li><span class="label">세종지사</span> <p>세종특별자치시 집현중앙7로 6, A동 1114호 세종대명벨리온지식산업센터</p></li>
+                                <li><span class="label">연구소</span> <p>경기도 고양시 덕양구 토당로42번길 21, 허브온빌딩</p></li>
+                            </ul>
+                        </div>
+                        <div class="content-right">
+                            <div class="menu">
+                                <ul class="menu-group">
+                                    <li>
+                                        <a href="">ABOUT</a>
+                                        <ul>
+                                            <li><a href="">회사연혁</a></li>
+                                            <li><a href="">CI</a></li>
+                                            <li><a href="">위치/연락처</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">BUSINESS</a>
+                                        <ul>
+                                            <li><a href="">신기술분야</a></li>
+                                            <li><a href="">DB분야</a></li>
+                                            <li><a href="">SI/SM분야</a></li>
+                                            <li><a href="">컨설팅분야</a></li>
+                                            <li><a href="">측량분야</a></li>
+                                            <li><a href="">연구개발분야</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">RECRUIMENT</a>
+                                        <ul>
+                                            <li><a href="">인재채용</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="policy-links">
+                                    <li><a href="">개인정보처리방침</a></li>
+                                    <li><a href="">이용약관</a></li>
+                                </ul>
+                            </div>
+                            <div class="bottom-group">
+                                <p class="copy">© (주)지오앤. All rights reserved.</p>
+                                <a href="javascript:void(0)" class=""><i class="icon file"></i><span>회사소개서 다운로드</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/smoke-cursor.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollSmoother.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/scroll-bar.js"></script>
+    <script src="js/sub.js"></script>
+</body>
+</html>

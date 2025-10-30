@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>특이한 CSS 속성 데모</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    h2 {
+      margin-top: 40px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+    .demo-box {
+      margin: 15px 0;
+      padding: 10px;
+      border: 1px dashed #aaa;
+    }
+
+    /* 1. text-orientation */
+    .vertical {
+      writing-mode: vertical-rl;
+      border: 1px solid #333;
+      height: 150px;
+      margin: 10px;
+      font-size: 18px;
+      display: inline-block;
+      padding: 5px;
+    }
+    .upright {
+      text-orientation: upright;
+    }
+    .mixed {
+      text-orientation: mixed;
+    }
+
+    /* 2. text-combine-upright */
+    .tcu {
+      writing-mode: vertical-rl;
+      text-combine-upright: all;
+      font-size: 24px;
+      border: 1px solid #000;
+      height: 150px;
+      display: inline-block;
+      padding: 5px;
+    }
+
+    /* 3. ruby-position */
+    ruby {
+      font-size: 32px;
+    }
+    rt {
+      font-size: 12px;
+      color: #555;
+      ruby-position: over;
+    }
+
+    /* 4. mix-blend-mode */
+    .bg {
+      width: 200px; height: 200px;
+      background: url('https://picsum.photos/200') center/cover;
+    }
+    .overlay {
+      width: 200px; height: 200px;
+      margin-top: -200px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 40px; font-weight: bold;
+      color: red;
+      mix-blend-mode: multiply;
+    }
+
+    /* 5. clip-path */
+    .circle {
+      width: 200px;
+      height: 200px;
+      clip-path: circle(50% at 50% 50%);
+    }
+
+    /* 6. shape-outside */
+    .float-img {
+      float: left;
+      shape-outside: circle(50%);
+      clip-path: circle(50%);
+      width: 200px; height: 200px;
+      margin: 10px;
+    }
+    .text-box {
+      width: 400px;
+      overflow: hidden;
+    }
+
+    /* 7. object-fit */
+    .cover, .contain {
+      width: 200px; height: 200px;
+      border: 1px solid #333;
+      object-position: center;
+      margin-right: 10px;
+    }
+    .cover { object-fit: cover; }
+    .contain { object-fit: contain; }
+
+    /* 8. backdrop-filter */
+    .bg-img {
+      width: 300px; height: 200px;
+      background: url('https://picsum.photos/400/300') center/cover;
+      position: relative;
+      margin-top: 10px;
+    }
+    .glass {
+      position: absolute;
+      bottom: 20px; left: 20px;
+      padding: 20px;
+      background: rgba(255,255,255,0.3);
+      backdrop-filter: blur(10px) brightness(1.2);
+      border-radius: 10px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>특이한 CSS 속성 데모</h1>
+
+  <h2>1. text-orientation</h2>
+  <div class="demo-box">
+    <div class="vertical upright">세로 upright ABC</div>
+    <div class="vertical mixed">세로 mixed ABC</div>
+  </div>
+
+  <h2>2. text-combine-upright</h2>
+  <div class="demo-box">
+    <div class="tcu">2025</div>
+  </div>
+
+  <h2>3. ruby-position</h2>
+  <div class="demo-box">
+    <ruby>
+      漢 <rt>Kan</rt>
+      字 <rt>Ji</rt>
+    </ruby>
+  </div>
+
+  <h2>4. mix-blend-mode</h2>
+  <div class="demo-box">
+    <div class="bg"></div>
+    <div class="overlay">TEXT</div>
+  </div>
+
+  <h2>5. clip-path</h2>
+  <div class="demo-box">
+    <img src="https://picsum.photos/300" class="circle">
+  </div>
+
+  <h2>6. shape-outside</h2>
+  <div class="demo-box text-box">
+    <img src="https://picsum.photos/200" class="float-img">
+    <p>
+      이 텍스트는 이미지를 원형으로 감싸며 배치됩니다.  
+      shape-outside 속성을 사용하면 잡지처럼 텍스트 흐름을
+      자유롭게 디자인할 수 있습니다.  
+      CSS 속성 덕분에 레이아웃 표현력이 훨씬 높아집니다.
+    </p>
+  </div>
+
+  <h2>7. object-fit / object-position</h2>
+  <div class="demo-box">
+    <img src="https://picsum.photos/400/300" class="cover">
+    <img src="https://picsum.photos/400/300" class="contain">
+  </div>
+
+  <h2>8. backdrop-filter</h2>
+  <div class="demo-box">
+    <div class="bg-img">
+      <div class="glass">Glass Effect</div>
+    </div>
+  </div>
+
+</body>
+</html>
