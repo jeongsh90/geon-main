@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.pin-spacer{margin-bottom:0 !important;}
+/* .pin-spacer{margin-bottom:0 !important;} */
 
 .bg-item{position: fixed; left:0; top:0; width:100%; height:100%;}
 .bg-item span{position: absolute; right:0; top:0; transform: translate(25%,-25%); display: flex; width:1200px;}
@@ -60,8 +60,7 @@
 .ci .sec1 .content-color .item:nth-child(6){background: #6c6e70;}
 .ci .sec1 .content-color .item:nth-child(7){background: #221e1f;}
 
-.location .visual{position: relative; background: url("../img/bg14.jpg") no-repeat center / cover; overflow: hidden;}
-.location .sec-location{margin-bottom:200px;}
+
 
 
 
@@ -76,9 +75,9 @@
 .business .content-info .txt h3{font-size:54px; font-weight: 800;}
 .business .content-info .txt p{font-size:21px; opacity: .85;}
 
-
+.location .visual{position: relative; background: url("../img/bg14.jpg") no-repeat center / cover; overflow: hidden;}
 .sec-location { width: 100%; height: 100vh; margin-bottom:0; overflow: hidden; }
-.sec-location .content-wrap { width: 100%; height: 100%; position: relative; }
+.sec-location .content-wrap { width: 100%; height: 100%; position: relative; margin:0;}
 .sec-location .content-group {  position: absolute; top: 0; left: 0; width: 100%; height: 100%; flex-shrink: 0; will-change: transform; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;}
 .sec-location .content-map{position: relative; width:60%; height:100%;}
 .sec-location .content-map::after{position: absolute; content:''; left:50%; top:50%; transform: translate(-50%,-50%); width:100%; height:100%; z-index: 10;}
