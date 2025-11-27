@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css" />
-	<link rel="stylesheet" href="./css/font.css" />
-	<link rel="stylesheet" href="./css/common.css" />
-	<link rel="stylesheet" href="./css/sub.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+	<link rel="stylesheet" href="../css/font.css" />
+	<link rel="stylesheet" href="../css/common.css" />
+	<link rel="stylesheet" href="../css/sub.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    <title>CI</title>
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+    <title>위치/연락처</title>
 </head>
-<body class="ci">
+<body class="location">
     <div class="bg-item"> <span><img src="img/bg-item01.png" alt=""></span> </div>
     <canvas id="fluid"></canvas>
     <div class="fix">
@@ -90,6 +91,7 @@
         </header>
         <div class="scroll-bar" id="scroll-bar"> <span></span> </div>
     </div>
+
     <div class="sub-wrap">
         <div class="smooth-wrapper">
             <!-- content -->
@@ -97,58 +99,145 @@
                 <section class="sec visual">
                     <div class="container">
                         <h2>
-                            <span class="desc1">ABOUT</span>
-                            <span class="desc2">CI</span>
+                            <span class="desc1">history</span>
+                            <span class="desc2">위치/연락처</span>
                         </h2>
                     </div>
                 </section>
-
                 <section class="sec intro" id="intro1">
                     <p>
-                        <span>지오앤의 CI는</span>
-                        <span>공간정보 산업의 선두주자로서  </span>
-                        <span>미래를 열어가는 지오앤의 비전을 표현합니다.  </span>
-
+                        <span>신뢰를 바탕으로 한 소통을 위해</span>
+                        <span>지역별 거점을 마련하여</span>
+                        <span>고객에게 더 가까이 다가갑니다.</span>
                     </p>
                 </section>
 
-                <section class="sec sec1">
-                    <div class="container">
-                        <div class="content-wrap">
-                            <div class="content-img">
-                                <span><img src="./img/logo.svg" alt=""></span>
-                                <span><img src="./img/logo.svg" alt=""></span>
+                <section class="sec sec-location location01">
+                    <div class="content-wrap">
+                        <div class="content-group group1">
+                            <div class="content-map">
+                                <div id="daumRoughmapContainer1759390850724" class="map root_daum_roughmap root_daum_roughmap_landing"></div>
+                                <script charset="UTF-8">
+                                    new daum.roughmap.Lander({
+                                        "timestamp": "1759390850724",
+                                        "key": "a59e7hm67s7",
+                                    }).render();
+                                </script>
                             </div>
-                            <div class="content-txt">
-                                <h3>CI 심볼의 의미</h3>
-                                <p>
-                                    좌측 심볼은 지구와 우주를, 로고는 열쇠(Key)를 형상화하여,
-                                    지구상 모든 영역을 포괄하는 공간정보 분야의
-                                    선두주자로서 공간정보 문제를 해결해 나갈 열쇠가 될 것이라는 포부를 담았습니다.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="color-system">
-                            <div class="content-color">
-                                <div class="item"><span>#6bbce9</span></div>
-                                <div class="item"><span>#264fa1</span></div>
-                                <div class="item"><span>#29664e</span></div>
-                                <div class="item"><span>#2c85c6</span></div>
-                                <div class="item"><span>#32366a</span></div>
-                                <div class="item"><span>#6c6e70</span></div>
-                                <div class="item"><span>#221e1f</span></div>
-                            </div>
-                            <div class="content-txt">
-                                <h3>Color System</h3>
-                                <p>초록색은 땅, 파란색은 바다, 검은색은 우주를 나타냅니다.</p>
+                            <div class="content-info">
+                                <div class="tit">
+                                    <h3>본사</h3>
+                                </div>
+                                <div class="info">
+                                    <ul>
+                                        <li><span>Add</span> <p>강원도 횡성군 횡성읍 문화체육로 52, 301호</p> </li>
+                                        <li><span>Tel</span> <p>033-345-0718</p> </li>
+                                        <li><span>Fax</span> <p>031-978-0719</p> </li>
+                                    </ul>
+                                    <div class="btn-group">
+                                        <a href="https://naver.me/F5agQf2P" target="_blank"><i class="icon naver"></i><span>네이버지도보기</span></a>
+                                        <a href="https://kko.kakao.com/hF3uZIJMit" target="_blank"><i class="icon kakao"></i><span>카카오지도보기</span></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="sec"></section>
-                <section class="sec"></section>
-                <section class="sec"></section>
+
+                <section class="sec sec-location">
+                    <div class="content-wrap">
+                        <div class="content-group group2">
+                            <div class="content-map">
+                                <div id="daumRoughmapContainer1759391111951" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                        
+                                <script charset="UTF-8">
+                                    new daum.roughmap.Lander({
+                                        "timestamp" : "1759391111951",
+                                        "key" : "a59kbrpjnif",
+                                    }).render();
+                                </script>
+                            </div>
+                            <div class="content-info">
+                                <div class="tit">
+                                    <h3>기업부설연구소</h3>
+                                </div>
+                                <div class="info">
+                                    <ul>
+                                        <li><span>Add</span> <p>경기도 고양시 덕양구 토당로42번길 21</p></li>
+                                        <li><span>Tel</span> <p>031-979-0717</p></li>
+                                    </ul>
+                                    <div class="btn-group">
+                                        <a href="https://naver.me/xmBUaqRv" target="_blank"><i class="icon naver"></i><span>네이버지도보기</span></a>
+                                        <a href="https://kko.kakao.com/gVueZ0iz1y" target="_blank"><i class="icon kakao"></i><span>카카오지도보기</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sec sec-location">
+                    <div class="content-wrap">
+                        <div class="content-group group3">
+                            <div class="content-map">
+                                <div id="daumRoughmapContainer1759391237971" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                                <script charset="UTF-8">
+                                	new daum.roughmap.Lander({
+                                		"timestamp" : "1759391237971",
+                                		"key" : "2bjrp92g7wpy",
+                                	}).render();
+                                </script>
+                            </div>
+                            <div class="content-info">
+                                <div class="tit">
+                                    <h3>기술개발센터</h3>
+                                </div>
+                                <div class="info">
+                                    <ul>
+                                        <li><span>Add</span> <p>서울특별시 금천구 디지털로9길 99 스타밸리 605호</p></li>
+                                    </ul>
+                                    <div class="btn-group">
+                                        <a href="https://naver.me/5asSExpE" target="_blank"><i class="icon naver"></i><span>네이버지도보기</span></a>
+                                        <a href="https://kko.kakao.com/stRvO2GvQb" target="_blank"><i class="icon kakao"></i><span>카카오지도보기</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sec-location">
+                    <div class="content-wrap">
+                        <div class="content-group group4">
+                            <div class="content-map">
+                                <div id="daumRoughmapContainer1759392064420" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                                <script charset="UTF-8">
+                                    new daum.roughmap.Lander({
+                                        "timestamp" : "1759392064420",
+                                        "key" : "xb7eyt9abba",
+                                    }).render();
+                                </script>
+                            </div>
+                            <div class="content-info">
+                                <div class="tit">
+                                    <h3>세종지사</h3>
+
+                                </div>
+                                <div class="info">
+                                    <ul>
+                                        <li><span>Add</span> <p>세종특별자치시 집현중앙7로 6, A동 1114호 세종대명벨리온지식산업센터</p></li>
+                                    </ul>
+                                    <div class="btn-group">
+                                        <a href="https://naver.me/GvfG4HSe" target="_blank"><i class="icon naver"></i><span>네이버지도보기</span></a>
+                                        <a href="https://kko.kakao.com/wWOY0WPjl9" target="_blank"><i class="icon kakao"></i><span>카카오지도보기</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <section class="sec footer" id="footer">
                     <div class="container">
                         <div class="content-left">
@@ -209,12 +298,12 @@
         </div>
     </div>
     
-    <script src="js/smoke-cursor.js"></script>
+    <script src="../js/smoke-cursor.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollSmoother.min.js"></script>
-    <script src="js/common.js"></script>
-    <script src="js/scroll-bar.js"></script>
-    <script src="js/sub.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/scroll-bar.js"></script>
+    <script src="../js/sub.js"></script>
 </body>
 </html>

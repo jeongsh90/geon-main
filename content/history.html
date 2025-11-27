@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css" />
-	<link rel="stylesheet" href="./css/font.css" />
-	<link rel="stylesheet" href="./css/common.css" />
-	<link rel="stylesheet" href="./css/sub.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+	<link rel="stylesheet" href="../css/font.css" />
+	<link rel="stylesheet" href="../css/common.css" />
+	<link rel="stylesheet" href="../css/sub.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-    <title>위치/연락처</title>
+    <title>회사연혁</title>
 </head>
-<body class="location">
+<body class="history">
     <div class="bg-item"> <span><img src="img/bg-item01.png" alt=""></span> </div>
     <canvas id="fluid"></canvas>
     <div class="fix">
@@ -91,7 +90,6 @@
         </header>
         <div class="scroll-bar" id="scroll-bar"> <span></span> </div>
     </div>
-
     <div class="sub-wrap">
         <div class="smooth-wrapper">
             <!-- content -->
@@ -99,139 +97,108 @@
                 <section class="sec visual">
                     <div class="container">
                         <h2>
-                            <span class="desc1">history</span>
-                            <span class="desc2">위치/연락처</span>
+                            <span class="desc1">ABOUT</span>
+                            <span class="desc2">회사연혁</span>
                         </h2>
                     </div>
                 </section>
+
                 <section class="sec intro" id="intro1">
                     <p>
-                        <span>신뢰를 바탕으로 한 소통을 위해</span>
-                        <span>지역별 거점을 마련하여</span>
-                        <span>고객에게 더 가까이 다가갑니다.</span>
+                        <span>지오앤의 발자취</span>
+                        <span>끊임없는 도전과 혁신으로 성장해온 시간</span>
+                        <span>공간정보 분야의 미래를 향한 노력의 기록</span>
+                        <span>우리가 걸어온 길을 소개합니다.</span>
                     </p>
                 </section>
 
-                <section class="sec sec-location">
-                    <div class="content-wrap">
-                        <div class="content-group group1">
-                            <div class="content-map">
-                                <div id="daumRoughmapContainer1759390850724" class="map root_daum_roughmap root_daum_roughmap_landing"></div>
-                                <script charset="UTF-8">
-                                    new daum.roughmap.Lander({
-                                        "timestamp": "1759390850724",
-                                        "key": "a59e7hm67s7",
-                                    }).render();
-                                </script>
-                            </div>
-                            <div class="content-info">
-                                <div class="tit">
-                                    <h3>본사</h3>
-                                </div>
-                                <div class="info">
+                <section class="sec sec2 history-list">
+                    <div class="container">
+                        <div class="content-year">
+                            <h3>
+                                <span class="year">2023</span>
+                                <span class="tilde">~</span>
+                                <span class="year">2020</span>
+                            </h3>
+                        </div>
+                        <div class="content-info">
+                            <div class="item-wrap">
+                                <div class="item">
+                                    <h4>2023</h4>
                                     <ul>
-                                        <li><span>Add</span> <p>강원도 횡성군 횡성읍 문화체육로 52, 301호</p> </li>
-                                        <li><span>Tel</span> <p>033-345-0718</p> </li>
-                                        <li><span>Fax</span> <p>031-978-0719</p> </li>
+                                        <li><span class="month">5</span> <p>고용노동부 선정 강소기업<br> 저작권 등록: 재난정보품질검사 S/W</p></li>
+                                        <li><span class="month">4</span> <p>벤처기업 갱신</p></li>
                                     </ul>
-                                    <div class="btn-group">
-                                        <a href="https://naver.me/F5agQf2P" target="_blank"><i class="icon naver"></i><span>네이버지도보기</span></a>
-                                        <a href="https://kko.kakao.com/hF3uZIJMit" target="_blank"><i class="icon kakao"></i><span>카카오지도보기</span></a>
-                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <h4>2022</h4>
+                                    <ul>
+                                        <li><span class="month">4</span><p>정보통신공사업 등록</p> </li>
+                                        <li><span class="month">1</span><p>일학습병행기업 인증</p> </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <h4>2021</h4>
+                                    <ul>
+                                        <li><span class="month">12</span> <p>특허 등록: 차량용 측위 장치</p></li>
+                                        <li><span class="month">11</span> <p>강원도 유망중소기업 인증</p></li>
+                                        <li><span class="month">8</span> <p>창업기업확인서 인증</p></li>
+                                        <li><span class="month">7</span> <p>특허등록: 드론을 이용한 오류 정보의 보정 처리가 가능한 영상처리시스템 외 11건</p></li>
+                                        <li><span class="month">4</span> <p>측지측량업 등록</p></li>
+                                        <li><span class="month">3</span> <p>저작권 등록: IoT 교통안전시설 유지보수 장비 SW FW <br> 저작권 등록: 유지관리용 현장 IoT 정보관리 SW App</p></li>
+                                        <li><span class="month">1</span> <p>경영혁신형 중소기업(Main-Biz)인증</p></li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <h4>2020</h4>
+                                    <ul>
+                                        <li> <span class="month">6</span> <p>측량업 등록 : 공간영상도화업(제07-000106호)</p> </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <section class="sec sec-location">
-                    <div class="content-wrap">
-                        <div class="content-group group2">
-                            <div class="content-map">
-                                <div id="daumRoughmapContainer1759391111951" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-                        
-                                <script charset="UTF-8">
-                                    new daum.roughmap.Lander({
-                                        "timestamp" : "1759391111951",
-                                        "key" : "a59kbrpjnif",
-                                    }).render();
-                                </script>
-                            </div>
-                            <div class="content-info">
-                                <div class="tit">
-                                    <h3>기업부설연구소</h3>
-                                </div>
-                                <div class="info">
-                                    <ul>
-                                        <li><span>Add</span> <p>경기도 고양시 덕양구 토당로42번길 21</p></li>
-                                        <li><span>Tel</span> <p>031-979-0717</p></li>
-                                    </ul>
-                                    <div class="btn-group">
-                                        <a href="https://naver.me/xmBUaqRv" target="_blank"><i class="icon naver"></i><span>네이버지도보기</span></a>
-                                        <a href="https://kko.kakao.com/gVueZ0iz1y" target="_blank"><i class="icon kakao"></i><span>카카오지도보기</span></a>
-                                    </div>
-                                </div>
-                            </div>
+                <section class="sec sec1 history-list">
+                    <div class="container">
+                        <div class="content-year">
+                            <h3>
+                                <span class="year">2019</span>
+                                <span class="tilde">~</span>
+                                <span class="year">2017</span>
+                            </h3>
                         </div>
-                    </div>
-                </section>
-
-                <section class="sec sec-location">
-                    <div class="content-wrap">
-                        <div class="content-group group3">
-                            <div class="content-map">
-                                <div id="daumRoughmapContainer1759391237971" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-                                <script charset="UTF-8">
-                                	new daum.roughmap.Lander({
-                                		"timestamp" : "1759391237971",
-                                		"key" : "2bjrp92g7wpy",
-                                	}).render();
-                                </script>
-                            </div>
-                            <div class="content-info">
-                                <div class="tit">
-                                    <h3>기술개발센터</h3>
-                                </div>
-                                <div class="info">
+                        <div class="content-info">
+                            <div class="item-wrap">
+                                <div class="item">
+                                    <h4>2019</h4>
                                     <ul>
-                                        <li><span>Add</span> <p>서울특별시 금천구 디지털로9길 99 스타밸리 605호</p></li>
+                                        <li><span class="month">4</span> <p>건설엔지니어링업(구 건설기술용역업) 등록<br> 저작권 등록: Tile Map Viewer</p></li>
+                                        <li><span class="month">3</span> <p>측량업 등록 : 영상처리업(제08-000117호)</p></li>
                                     </ul>
-                                    <div class="btn-group">
-                                        <a href="https://naver.me/5asSExpE" target="_blank"><i class="icon naver"></i><span>네이버지도보기</span></a>
-                                        <a href="https://kko.kakao.com/stRvO2GvQb" target="_blank"><i class="icon kakao"></i><span>카카오지도보기</span></a>
-                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
-                <section class="sec-location">
-                    <div class="content-wrap">
-                        <div class="content-group group4">
-                            <div class="content-map">
-                                <div id="daumRoughmapContainer1759392064420" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-
-                                <script charset="UTF-8">
-                                    new daum.roughmap.Lander({
-                                        "timestamp" : "1759392064420",
-                                        "key" : "xb7eyt9abba",
-                                    }).render();
-                                </script>
-                            </div>
-                            <div class="content-info">
-                                <div class="tit">
-                                    <h3>세종지사</h3>
-
-                                </div>
-                                <div class="info">
+                                <div class="item">
+                                    <h4>2018</h4>
                                     <ul>
-                                        <li><span>Add</span> <p>세종특별자치시 집현중앙7로 6, A동 1114호 세종대명벨리온지식산업센터</p></li>
+                                        <li><span class="month">12</span> <p>가족친화 기업인증</p></li>
+                                        <li><span class="month">11</span> <p>측량업 등록 : 지도제작업</p></li>
+                                        <li><span class="month">9</span> <p>초경량비행장치사용사업 등록</p></li>
+                                        <li><span class="month">8</span> <p>측량업 등록 : 지하시설물측량업<br> 벤처기업 등록(중진공)</p></li>
+                                        <li><span class="month">7</span> <p>측량업 등록 : 공공측량업</p></li>
+                                        <li><span class="month">5</span> <p>저작권 등록: Map Auto Capture, 국공유재산 현장조사시스템</p></li>
+                                        <li><span class="month">4</span> <p>연구개발서비스업 등록(과학기술정보통신부)</p></li>
+                                        <li><span class="month">3</span> <p>측량업 등록 : 수치지도제작업</p></li>
+                                        <li><span class="month">1</span> <p>기업부설연구소 설립</p></li>
                                     </ul>
-                                    <div class="btn-group">
-                                        <a href="https://naver.me/GvfG4HSe" target="_blank"><i class="icon naver"></i><span>네이버지도보기</span></a>
-                                        <a href="https://kko.kakao.com/wWOY0WPjl9" target="_blank"><i class="icon kakao"></i><span>카카오지도보기</span></a>
-                                    </div>
+                                </div>
+                                <div class="item">
+                                    <h4>2017</h4>
+                                    <ul>
+                                        <li><span class="month">7</span> <p>(주)지오앤 설립</p></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -297,15 +264,13 @@
             </div>
         </div>
     </div>
-    <script>
-        
-    </script>
-    <script src="js/smoke-cursor.js"></script>
+    
+    <script src="../js/smoke-cursor.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollSmoother.min.js"></script>
-    <script src="js/common.js"></script>
-    <script src="js/scroll-bar.js"></script>
-    <script src="js/sub.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/scroll-bar.js"></script>
+    <script src="../js/sub.js"></script>
 </body>
 </html>
