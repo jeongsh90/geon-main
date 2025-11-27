@@ -144,7 +144,7 @@ $(function () {
 
     $locations.forEach((section, i) => {
         const next = $locations[i + 1];
-        
+
         if (!next) {
             ScrollTrigger.create({
                 trigger: section,
@@ -154,7 +154,7 @@ $(function () {
                 pinSpacing: true,
                 anticipatePin: 1,
             });
-        } 
+        }
         else {
             ScrollTrigger.create({
                 trigger: section,
@@ -167,7 +167,7 @@ $(function () {
             });
         }
     });
-    
+
     $locations.forEach((section) => {
         gsap.from(section, {
             opacity: 0,
@@ -187,3 +187,104 @@ $(function () {
 });
 
 
+gsap.registerPlugin(ScrollTrigger);
+
+$(function () {
+
+    /* ==========================================
+       BUSINESS TAB + SCROLL TO INTRO (AUTO)
+    ========================================== */
+
+    $(".business-nav ul li").on("click", function () {
+
+        $(".business-nav ul li").removeClass("on");
+        $(this).addClass("on");
+
+        const index = $(this).index();
+        const $tabContents = $(".tab-content");
+
+        $tabContents.removeClass("on").hide();
+        const $currentTab = $tabContents.eq(index).addClass("on").fadeIn(300);
+
+        // ★ sec1 GSAP 재생성
+        setTimeout(() => {
+            initBusinessSec1();
+            ScrollTrigger.refresh();
+        }, 120);
+
+        // intro 이동
+        const $targetIntro = $currentTab.find(".intro").first();
+
+        if ($targetIntro.length) {
+            if (window.smoother) {
+                smoother.scrollTo($targetIntro[0], true, "center top");
+            } else {
+                $("html, body").animate({
+                    scrollTop: $targetIntro.offset().top
+                }, 600);
+            }
+        }
+
+    });
+
+
+    /* ==========================================
+       FOOTER 감지 → NAV 숨김
+    ========================================== */
+
+    ScrollTrigger.create({
+        trigger: "#footer",
+        start: "top bottom",
+        end: "bottom bottom",
+        onEnter: () => $(".business-nav").addClass("off"),
+        onLeaveBack: () => $(".business-nav").removeClass("off")
+    });
+
+    /* 최초 실행 */
+    initBusinessSec1();
+});
+
+
+
+/* ==========================================
+   business01 sec1 : item 순차 등장 (함수화)
+========================================== */
+
+let businessSec1TL = null;
+
+function initBusinessSec1() {
+
+    // 기존 TL 제거
+    if (businessSec1TL) {
+        businessSec1TL.scrollTrigger.kill(true);
+        businessSec1TL.kill();
+        businessSec1TL = null;
+    }
+
+    // ★ 핵심 수정: 현재 on 된 탭 내부에서 sec1을 찾음
+    let sec = document.querySelector(".tab-content.on .sec1");
+    let items = gsap.utils.toArray(".tab-content.on .sec1 .item");
+
+    if (!sec || items.length === 0) return;
+
+    // 새로운 TL 생성
+    businessSec1TL = gsap.timeline({
+        scrollTrigger: {
+            trigger: sec,
+            start: "top top",
+            end: "+=" + (items.length * 250),
+            scrub: true,
+            pin: true,
+            anticipatePin: 1
+        }
+    });
+
+    items.forEach((item, i) => {
+        businessSec1TL.from(item, {
+            x: 100,
+            opacity: .5,
+            duration: 1,
+            ease: "power2.ease"
+        }, i);
+    });
+}

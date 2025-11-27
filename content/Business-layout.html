@@ -9,12 +9,11 @@
 	<link rel="stylesheet" href="../css/sub.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-    <title>위치/연락처</title>
+    <title>Business-layout</title>
 </head>
-<body class="location">
-    <div class="bg-item"> <span><img src="img/bg-item01.png" alt=""></span> </div>
+<body>
     <canvas id="fluid"></canvas>
+    <div class="bg-item"> <span><img src="img/bg-item01.png" alt=""></span> </div>
     <div class="fix">
         <div class="Frame">
             <div class="bar top"></div>
@@ -91,153 +90,64 @@
         </header>
         <div class="scroll-bar" id="scroll-bar"> <span></span> </div>
     </div>
+    <div class="business-nav">
+        <ul>
+            <li class="on"><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+        </ul>
+    </div>
 
-    <div class="sub-wrap">
+    <div class="sub-wrap business business02">
         <div class="smooth-wrapper">
             <!-- content -->
             <div class="smooth-content">
                 <section class="sec visual">
                     <div class="container">
                         <h2>
-                            <span class="desc1">history</span>
-                            <span class="desc2">위치/연락처</span>
+                            <span class="desc1">사업분야</span>
+                            <span class="desc2">DB분야</span>
                         </h2>
                     </div>
                 </section>
-
-                <section class="sec intro" id="intro1">
-                    <p>
-                        <span>신뢰를 바탕으로 한 소통을 위해</span>
-                        <span>지역별 거점을 마련하여</span>
-                        <span>고객에게 더 가까이 다가갑니다.</span>
-                    </p>
-                </section>
-
-                <section class="sec sec-location location01">
-                    <div class="content-wrap">
-                        <div class="content-group group1">
-                            <div class="content-map">
-                                <div id="daumRoughmapContainer1759390850724" class="map root_daum_roughmap root_daum_roughmap_landing"></div>
-                                <script charset="UTF-8">
-                                    new daum.roughmap.Lander({
-                                        "timestamp": "1759390850724",
-                                        "key": "a59e7hm67s7",
-                                    }).render();
-                                </script>
-                            </div>
-                            <div class="content-info">
-                                <div class="tit">
-                                    <h3>본사</h3>
-                                </div>
-                                <div class="info">
-                                    <ul>
-                                        <li><span>Add</span> <p>강원도 횡성군 횡성읍 문화체육로 52, 301호</p> </li>
-                                        <li><span>Tel</span> <p>033-345-0718</p> </li>
-                                        <li><span>Fax</span> <p>031-978-0719</p> </li>
-                                    </ul>
-                                    <div class="btn-group">
-                                        <a href="https://naver.me/F5agQf2P" target="_blank"><i class="icon naver"></i><span>네이버지도보기</span></a>
-                                        <a href="https://kko.kakao.com/hF3uZIJMit" target="_blank"><i class="icon kakao"></i><span>카카오지도보기</span></a>
+                <div class="tab-content on">
+                    <section class="sec intro" id="intro1">
+                        <p>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </p>
+                    </section>
+                    <section class="sec sec1">
+                        <div class="container">
+                            <h3></h3>
+                            <div class="content">
+                                <div class="item">
+                                    <div class="img-box">
+                                        <img src="https://placehold.co/500" alt="">
+                                    </div>
+                                    <div class="txt-box">
+                                        <h5></h5>
+                                        <p></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-
-                <section class="sec sec-location">
-                    <div class="content-wrap">
-                        <div class="content-group group2">
-                            <div class="content-map">
-                                <div id="daumRoughmapContainer1759391111951" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-                        
-                                <script charset="UTF-8">
-                                    new daum.roughmap.Lander({
-                                        "timestamp" : "1759391111951",
-                                        "key" : "a59kbrpjnif",
-                                    }).render();
-                                </script>
-                            </div>
-                            <div class="content-info">
-                                <div class="tit">
-                                    <h3>기업부설연구소</h3>
-                                </div>
-                                <div class="info">
-                                    <ul>
-                                        <li><span>Add</span> <p>경기도 고양시 덕양구 토당로42번길 21</p></li>
-                                        <li><span>Tel</span> <p>031-979-0717</p></li>
-                                    </ul>
-                                    <div class="btn-group">
-                                        <a href="https://naver.me/xmBUaqRv" target="_blank"><i class="icon naver"></i><span>네이버지도보기</span></a>
-                                        <a href="https://kko.kakao.com/gVueZ0iz1y" target="_blank"><i class="icon kakao"></i><span>카카오지도보기</span></a>
-                                    </div>
-                                </div>
-                            </div>
+                    </section>
+                    <section class="sec project-list">
+                        <div class="container">
+                            <h4>수행 실적</h4>
+                            <ul>
+                                <li> <span class="label"></span> <p></p> </li>
+                                <li> <span class="label"></span> <p></p> </li>
+                            </ul>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
 
-                <section class="sec sec-location">
-                    <div class="content-wrap">
-                        <div class="content-group group3">
-                            <div class="content-map">
-                                <div id="daumRoughmapContainer1759391237971" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-                                <script charset="UTF-8">
-                                	new daum.roughmap.Lander({
-                                		"timestamp" : "1759391237971",
-                                		"key" : "2bjrp92g7wpy",
-                                	}).render();
-                                </script>
-                            </div>
-                            <div class="content-info">
-                                <div class="tit">
-                                    <h3>기술개발센터</h3>
-                                </div>
-                                <div class="info">
-                                    <ul>
-                                        <li><span>Add</span> <p>서울특별시 금천구 디지털로9길 99 스타밸리 605호</p></li>
-                                    </ul>
-                                    <div class="btn-group">
-                                        <a href="https://naver.me/5asSExpE" target="_blank"><i class="icon naver"></i><span>네이버지도보기</span></a>
-                                        <a href="https://kko.kakao.com/stRvO2GvQb" target="_blank"><i class="icon kakao"></i><span>카카오지도보기</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
-                <section class="sec-location">
-                    <div class="content-wrap">
-                        <div class="content-group group4">
-                            <div class="content-map">
-                                <div id="daumRoughmapContainer1759392064420" class="root_daum_roughmap root_daum_roughmap_landing"></div>
 
-                                <script charset="UTF-8">
-                                    new daum.roughmap.Lander({
-                                        "timestamp" : "1759392064420",
-                                        "key" : "xb7eyt9abba",
-                                    }).render();
-                                </script>
-                            </div>
-                            <div class="content-info">
-                                <div class="tit">
-                                    <h3>세종지사</h3>
-
-                                </div>
-                                <div class="info">
-                                    <ul>
-                                        <li><span>Add</span> <p>세종특별자치시 집현중앙7로 6, A동 1114호 세종대명벨리온지식산업센터</p></li>
-                                    </ul>
-                                    <div class="btn-group">
-                                        <a href="https://naver.me/GvfG4HSe" target="_blank"><i class="icon naver"></i><span>네이버지도보기</span></a>
-                                        <a href="https://kko.kakao.com/wWOY0WPjl9" target="_blank"><i class="icon kakao"></i><span>카카오지도보기</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
                 <section class="sec footer" id="footer">
                     <div class="container">
@@ -298,6 +208,8 @@
             </div>
         </div>
     </div>
+
+    
     
     <script src="../js/smoke-cursor.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
@@ -308,3 +220,8 @@
     <script src="../js/sub.js"></script>
 </body>
 </html>
+
+
+<style>
+    a{transform: rotate();}
+</style>

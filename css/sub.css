@@ -67,6 +67,7 @@
 
 
 .business .sec{padding:100px;}
+.business .footer{padding:0;}
 .business .sec-business .container{display: flex; gap:100px; width:100%; height:100%; margin:0 auto; border:1px solid red;}
 .business .content-img{position: relative; aspect-ratio: 16 / 9; width:65%; border-radius: 50px; overflow: hidden;}
 .business .content-img .item{position: absolute; left:0; top:0; width:100%; height:100%; background: var(--dark-500);}
@@ -95,3 +96,37 @@
 .sec-location .btn-group a:nth-child(2) i{font-size:24px;}
 .sec-location .btn-group a:nth-child(1):hover{background: #03a94d; color:var(--dark-1000); border-color:transparent;}
 .sec-location .btn-group a:nth-child(2):hover{background: #f7e111; color:var(--dark-100); border-color:transparent;}
+
+
+
+
+.business-nav{position: fixed; left:50%; bottom:50px; transform: translate(-50%, 0); z-index: 100000; transition: all .3s ease;}
+.business-nav.off{transform: translate(-50%, 200%);}
+.business-nav ul{display: flex; gap:15px;}
+.business-nav ul li{display: flex; align-items: center; justify-content: center; height: 50px; padding:0 25px; border: 1px solid rgba(255, 255, 255, .5); border-radius: 15px; font-size: 18px; background: rgba(255, 255, 255, .1); backdrop-filter: blur(10px); transition: all .3s ease; cursor: pointer;}
+.business-nav ul li.on{background:var(--blue-500); border-color:var(--blue-500)}
+.business .tab-content{display: none;}
+.business .tab-content.on{display: block;}
+.business .intro{width:100%; height:75vh;}
+.business .intro p span:nth-child(1){display: flex; flex-direction: row; justify-content: flex-start; gap:10px; font-size:46px; margin-bottom:20px;}
+.business .intro p span:nth-child(1)::before{content:'['; font-weight: 600; opacity: .75; color:var(--blue-500)}
+.business .intro p span:nth-child(1)::after{content:']'; font-weight: 600; opacity: .75; color:var(--blue-500)}
+.business .intro p span{font-size:34px;}
+
+
+.business .sec1{width:100%; height:100vh;}
+.business .sec1 .container{display: flex; flex-direction: column; gap:50px; max-width:1540px; width:100%; height:100%; margin:0 auto; padding-bottom:50px;}
+.business .sec1 h3{font-size:42px; font-weight: 800;}
+.business .sec1 .content{display: flex; flex-wrap: wrap; gap:25px; flex:1 1 0; min-height:0;}
+.business .sec1 .item{display: flex; flex-direction: column; width:calc((100% - 75px) / 4); border:1px solid var(--dark-400); border-radius: 25px; backdrop-filter: blur(10px); overflow: hidden;}
+.business .sec1 .img-box{display: flex;}
+.business .sec1 .img-box img{width:100%; aspect-ratio: 4 / 3; object-fit: cover;}
+.business .sec1 .txt-box{display: flex; flex-direction: column; flex: 1 1 0; min-height:0; gap:15px; padding:25px;}
+.business .sec1 h5{font-size:24px; font-weight: 700;}
+.business .sec1 p{font-size:17px; color:var(--dark-700)}
+.business .project-list .container{display: flex; flex-direction: column; gap:25px; max-width:1540px; width:100%; margin:0 auto;}
+.business .project-list h4{font-size:32px; font-weight: 700;}
+.business .project-list ul{display: flex; flex-wrap: wrap; gap:15px;}
+.business .project-list ul li{display: flex; align-items: center; justify-content: center; gap:10px; height: 50px; padding: 0 25px; border: 1px solid rgba(255, 255, 255, .5); border-radius: 15px; font-size: 18px; background: rgba(255, 255, 255, .1); backdrop-filter: blur(10px); transition: all .3s ease; line-height: 1;}
+.business .project-list ul li p{gap:5px; font-size:16px; color:var(--dark-600);}
+.business .project-list ul li p::before{content:'-'; margin-right:5px;}

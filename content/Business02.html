@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css" />
+	<link rel="stylesheet" href="../css/font.css" />
+	<link rel="stylesheet" href="../css/common.css" />
+	<link rel="stylesheet" href="../css/sub.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <title>DB분야</title>
+</head>
+<body>
+    <canvas id="fluid"></canvas>
+    <div class="bg-item"> <span><img src="img/bg-item01.png" alt=""></span> </div>
+    <div class="fix">
+        <div class="Frame">
+            <div class="bar top"></div>
+            <div class="bar bottom"></div>
+            <div class="bar left"></div>
+            <div class="bar right"></div>
+            <div class="corner left top"></div>
+            <div class="corner right top"></div>
+            <div class="corner left bottom"></div>
+            <div class="corner right bottom"></div>
+        </div>
+    
+        <div class="quick">
+            <ul>
+                <li><a href="javascript:void(0)" class=""><i class="icon pin"></i><span>오시는길</span></a></li>
+                <li><a href="javascript:void(0)" class=""><i class="icon file"></i><span>회사소개서 다운로드</span></a></li>
+                <li><a href="javascript:void(0)" class=""><i class="icon mail"></i><span>문의하기</span></a></li>
+            </ul>
+        </div>
+    
+        <div class="scroll-down">
+            <div>
+                <p>SCROLL DOWN</p>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="page-btn-group">
+            <a href="" class="page-prev"><i class="icon arrow-top"></i></a>
+            <a href="" class="page-next"><i class="icon arrow-bottom"></i></a>
+        </div>
+
+        <header class="header">
+            <a href="javascript:void(0)" class="logo"> <img src="../img/logo.svg" alt=""> </a>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="">ABOUT</a>
+                        <div class="depth2">
+                            <h3>ABOUT</h3>
+                            <ul>
+                                <li><a href=""><span>회사연혁</span><i class="icon link-arrow"></i></a></li>
+                                <li><a href=""><span>CI</span><i class="icon link-arrow"></i></a></li>
+                                <li><a href=""><span>위치/연락처</span><i class="icon link-arrow"></i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">BUSINESS</a>
+                        <div class="depth2">
+                            <h3>BUSINESS</h3>
+                            <ul>
+                                <li><a href=""><span>신기술분야</span><i class="icon link-arrow"></i></a></li>
+                                <li><a href=""><span>DB분야</span><i class="icon link-arrow"></i></a></li>
+                                <li><a href=""><span>SI/SM분야</span><i class="icon link-arrow"></i></a></li>
+                                <li><a href=""><span>컨설팅분야</span><i class="icon link-arrow"></i></a></li>
+                                <li><a href=""><span>측량분야</span><i class="icon link-arrow"></i></a></li>
+                                <li><a href=""><span>연구개발분야</span><i class="icon link-arrow"></i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">RECRUIMENT</a>
+                        <div class="depth2">
+                            <h3>RECRUIMENT</h3>
+                            <ul>
+                                <li><a href=""><span>인재채용</span><i class="icon link-arrow"></i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <!-- <div class="site-map-btn"> <div class=""><span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span></div> </div> -->
+            </div>
+        </header>
+        <div class="scroll-bar" id="scroll-bar"> <span></span> </div>
+    </div>
+    <div class="business-nav">
+        <ul>
+            <li class="on"><span>디지털 트윈 기반 도로정보 통합 구축/관리</span></li>
+            <li><span>AI 학습데이터 구축 및 알고리즘</span></li>
+            <li><span>공간정보 구축</span></li>
+        </ul>
+    </div>
+
+    <div class="sub-wrap business business02">
+        <div class="smooth-wrapper">
+            <!-- content -->
+            <div class="smooth-content">
+                <section class="sec visual">
+                    <div class="container">
+                        <h2>
+                            <span class="desc1">사업분야</span>
+                            <span class="desc2">DB분야</span>
+                        </h2>
+                    </div>
+                </section>
+                <div class="tab-content on">
+                    <section class="sec intro" id="intro1">
+                        <p>
+                            <span>디지털 트윈 기반 도로정보 통합 구축/관리</span>
+                            <span>전국 도로 및 도로시설물, 기하정보 등 3차원 기반의 도로정보를</span>
+                            <span>정확하게 구축하고 통합·관리합니다.</span>
+                        </p>
+                    </section>
+                    <section class="sec sec1">
+                        <div class="container">
+                            <h3>핵심 기술 요소</h3>
+
+                            <div class="content">
+
+                                <div class="item">
+                                    <div class="img-box">
+                                        <img src="https://placehold.co/500" alt="">
+                                    </div>
+                                    <div class="txt-box">
+                                        <h5>3D 도로 기하정보 구축 기술</h5>
+                                        <p>도로의 선형, 종·횡단면, 평면·입체 구조물 등을 고정밀 3D로 모델링하여 디지털 트윈 기반의 도로 표현을 정밀하게 구현합니다.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="img-box">
+                                        <img src="https://placehold.co/500" alt="">
+                                    </div>
+                                    <div class="txt-box">
+                                        <h5>도로시설물 자동 추출 및 인식</h5>
+                                        <p>AI 기반 객체 인식 기술을 활용해 가드레일, 표지판, 교량, 터널 등 도로시설물을 자동 추출하고 속성 정보를 구조화합니다.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="img-box">
+                                        <img src="https://placehold.co/500" alt="">
+                                    </div>
+                                    <div class="txt-box">
+                                        <h5>정밀 도로 네트워크 구축</h5>
+                                        <p>차선·차로 구성, 연결 관계, 교차로 구조 등 도로 네트워크를 정밀하게 구축하여 주행 시뮬레이션 및 분석이 가능한 데이터로 가공합니다.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="img-box">
+                                        <img src="https://placehold.co/500" alt="">
+                                    </div>
+                                    <div class="txt-box">
+                                        <h5>디지털 트윈 기반 통합 관리 플랫폼 연계</h5>
+                                        <p>3D 도로정보를 플랫폼·시설물 관리 시스템과 연동하여 실시간 모니터링·갱신·분석이 가능한 통합 관리 환경을 제공합니다.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="sec project-list">
+                        <div class="container">
+                            <h4>수행 실적</h4>
+                            <ul>
+                                <li> <span class="label">도로정보플랫폼 구축</span> <p>한국국토정보공사</p> </li>
+                                <li> <span class="label">도로대장 수시갱신 지원</span> <p>한국국토정보공사</p> </li>
+                                <li> <span class="label">일반국도 도로대장 기본맵 구축</span> <p>한국국토정보공사</p> </li>
+                                <li> <span class="label">정밀도로지도 DB 제작</span> <p>SK텔레콤</p> </li>
+                                <li> <span class="label">정밀맵 제작 용역</span> <p>경북IT융합산업기술원</p> </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="tab-content">
+
+                    <!-- INTRO -->
+                    <section class="sec intro" id="intro2">
+                        <p>
+                            <span>AI 학습데이터 구축 및 알고리즘</span>
+                            <span>국토환경 변화 탐지 및 토지·시설물 이용 모니터링을 위한 기반 데이터를 구축하고,</span>
+                            <span>수집된 정보를 AI 학습 모델과 알고리즘 개발에 활용합니다.</span>
+                        </p>
+                    </section>
+
+                    <!-- 핵심 기술 요소 -->
+                    <section class="sec sec1">
+                        <div class="container">
+                            <h3>핵심 기술 요소</h3>
+
+                            <div class="content">
+
+                                <div class="item">
+                                    <div class="img-box">
+                                        <img src="https://placehold.co/500" alt="">
+                                    </div>
+                                    <div class="txt-box">
+                                        <h5>다중 센서 기반 데이터 확보</h5>
+                                        <p>항공·위성 영상, MMS, 드론 등 다양한 센서 데이터를 수집하여 AI 학습에 최적화된 형태로 획득합니다.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="img-box">
+                                        <img src="https://placehold.co/500" alt="">
+                                    </div>
+                                    <div class="txt-box">
+                                        <h5>데이터 전처리 및 정제</h5>
+                                        <p>영상 보정, 오차 제거, 라벨 검수 등 고품질 AI 학습데이터 생성을 위한 전처리·정제 파이프라인을 구축합니다.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="img-box">
+                                        <img src="https://placehold.co/500" alt="">
+                                    </div>
+                                    <div class="txt-box">
+                                        <h5>대규모 라벨링 및 자동화 기술</h5>
+                                        <p>객체 분류·탐지·세분화(Classification/Detection/Segmentation) 기반의 라벨링 자동화 알고리즘을 적용해 대량 데이터를 효율적으로 구축합니다.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="img-box">
+                                        <img src="https://placehold.co/500" alt="">
+                                    </div>
+                                    <div class="txt-box">
+                                        <h5>AI 모델 학습 및 알고리즘 개발</h5>
+                                        <p>수집·정제된 데이터를 활용하여 환경 변화 탐지, 토지 이용 분석, 자율주행 인지 등 목적에 맞는 AI 모델 및 알고리즘을 개발합니다.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                    <section class="sec project-list">
+                        <div class="container">
+                            <h4>수행 실적</h4>
+                            <ul>
+                                <li><span class="label">인공지능 학습용 데이터 구축</span><p>한국지능정보사회진흥원</p></li>
+                                <li><span class="label">피복지도 및 산림수송 AI 응용</span><p>한국환경정책·평가연구원</p></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="tab-content">
+
+                    <!-- INTRO -->
+                    <section class="sec intro" id="intro3">
+                        <p>
+                            <span>공간정보 구축</span>
+                            <span>공간정보의 새로운 트렌드를 이해하고 반영하며,</span>
+                            <span>최적의 구축 방법론을 통해 공간데이터를 생산·가공·서비스하고 있습니다.</span>
+                        </p>
+                    </section>
+
+                    <!-- 핵심 기술 요소 -->
+                    <section class="sec sec1">
+                        <div class="container">
+                            <h3>핵심 기술 요소</h3>
+
+                            <div class="content">
+
+                                <div class="item">
+                                    <div class="img-box">
+                                        <img src="https://placehold.co/500" alt="">
+                                    </div>
+                                    <div class="txt-box">
+                                        <h5>다중 공간데이터 수집 기술</h5>
+                                        <p>항공영상, 드론영상, MMS, 위성영상 등 다양한 공간데이터를 활용하여 목적에 맞는 기초 공간정보를 수집합니다.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="img-box">
+                                        <img src="https://placehold.co/500" alt="">
+                                    </div>
+                                    <div class="txt-box">
+                                        <h5>지형·지물 자동 추출 및 갱신</h5>
+                                        <p>도로, 건물, 시설물, 지형지물 등을 객체 단위로 자동 추출하고 갱신하여 최신 상태의 공간정보 DB를 유지합니다.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="img-box">
+                                        <img src="https://placehold.co/500" alt="">
+                                    </div>
+                                    <div class="txt-box">
+                                        <h5>대규모 공간정보 가공 및 정비</h5>
+                                        <p>좌표계 정비, 오차 보정, 속성 통합 등 대규모 공간데이터를 정제·구조화하여 활용 가능한 형태로 제공합니다.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="img-box">
+                                        <img src="https://placehold.co/500" alt="">
+                                    </div>
+                                    <div class="txt-box">
+                                        <h5>GIS 기반 공간정보 서비스 구축</h5>
+                                        <p>다양한 활용 목적에 맞춘 지도 기반 시각화·분석·운영 서비스(GIS)를 구축하고 정책·업무 활용을 지원합니다.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="sec project-list">
+                        <div class="container">
+                            <h4>수행 실적</h4>
+                            <ul>
+                                <li>
+                                    <span class="label">세종시 숲길 실태조사 및 DB연계 구축</span>
+                                    <p>세종특별자치시</p>
+                                </li>
+                                <li>
+                                    <span class="label">국가인터넷지도 및 국가관심지점정보 갱신</span>
+                                    <p>국토지리정보원</p>
+                                </li>
+                                <li>
+                                    <span class="label">국가기본도 표기 지정 정비 용역</span>
+                                    <p>영월, 태백, 양양, 정선, 횡성, 홍천, 양구 등 지자체 다수</p>
+                                </li>
+                                <li>
+                                    <span class="label">국토교통 빅데이터 대쉬보드 제작 및 데이터 맵 구축</span>
+                                    <p>한국건설기술연구원</p>
+                                </li>
+                                <li>
+                                    <span class="label">숲길 연결망 구축</span>
+                                    <p>한국산림복지진흥원</p>
+                                </li>
+                                <li>
+                                    <span class="label">어린이 안전진단 빅데이터 분석 · 활용</span>
+                                    <p>서울특별시 강서구</p>
+                                </li>
+                                <li>
+                                    <span class="label">지명조사사업</span>
+                                    <p>국토지리정보원</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                </div>
+
+
+
+                <section class="sec footer" id="footer">
+                    <div class="container">
+                        <div class="content-left">
+                            <a href="" class="logo"><img src="../img/logo.svg" alt=""></a>
+                            <ul>
+                                <li><span class="label">회사명</span> <p>주식회사 지오앤</p></li>
+                                <li><span class="label">사업자등록번호</span> <p>474-88-00887</p></li>
+                                <li><span class="label">대표이사</span> <p>권찬오</p></li>
+                                <li><span class="label">Tel</span> <p>031-978-0719</p></li>
+                                <li><span class="label">Fax</span> <p>031-978-0719</p></li>
+                                <li><span class="label">본사</span> <p>강원도 횡성군 횡성읍 문화체육로 52, 301호</p></li>
+                                <li><span class="label">세종지사</span> <p>세종특별자치시 집현중앙7로 6, A동 1114호 세종대명벨리온지식산업센터</p></li>
+                                <li><span class="label">연구소</span> <p>경기도 고양시 덕양구 토당로42번길 21, 허브온빌딩</p></li>
+                            </ul>
+                        </div>
+                        <div class="content-right">
+                            <div class="menu">
+                                <ul class="menu-group">
+                                    <li>
+                                        <a href="">ABOUT</a>
+                                        <ul>
+                                            <li><a href="">회사연혁</a></li>
+                                            <li><a href="">CI</a></li>
+                                            <li><a href="">위치/연락처</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">BUSINESS</a>
+                                        <ul>
+                                            <li><a href="">신기술분야</a></li>
+                                            <li><a href="">DB분야</a></li>
+                                            <li><a href="">SI/SM분야</a></li>
+                                            <li><a href="">컨설팅분야</a></li>
+                                            <li><a href="">측량분야</a></li>
+                                            <li><a href="">연구개발분야</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">RECRUIMENT</a>
+                                        <ul>
+                                            <li><a href="">인재채용</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="policy-links">
+                                    <li><a href="">개인정보처리방침</a></li>
+                                    <li><a href="">이용약관</a></li>
+                                </ul>
+                            </div>
+                            <div class="bottom-group">
+                                <p class="copy">© (주)지오앤. All rights reserved.</p>
+                                <a href="javascript:void(0)" class=""><i class="icon file"></i><span>회사소개서 다운로드</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <script src="../js/smoke-cursor.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollSmoother.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/scroll-bar.js"></script>
+    <script src="../js/sub.js"></script>
+</body>
+</html>
+
+
+<style>
+    a{transform: rotate();}
+</style>
