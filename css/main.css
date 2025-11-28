@@ -73,21 +73,23 @@
 .sec4 .content-txt h3{display: flex; flex-direction: column;}
 .sec4 .content-txt h3 .desc1{font-size:24px; color:var(--blue-500); font-weight: 700;}
 .sec4 .content-txt h3 .desc2{font-size:62px; font-weight: 700;}
+.sec4 .content-txt p{font-size:21px; color:#fff; opacity: .95;}
 .sec4 .content-txt a{display: flex; align-items: center; gap:25px; height:75px; padding:35px; border:1px solid #fff; border-radius: 100px; backdrop-filter: blur(10px); transition: all .3s ease;}
 .sec4 .content-txt a:hover{background: var(--blue-500); border-color:var(--blue-500);}
 .sec4 .content-txt a span{font-size:18px;}
 .sec4 .content-txt a i{font-size:28px;}
 .sec4 .content-banner{display: flex; width:100%; height:100%;}
-.sec4 .banner-wrap{display: flex; flex-direction: column; width:100%; height:100%; flex:1 1 auto; min-height: 0;}
+.sec4 .banner-wrap{display: flex; flex-direction: column; width:100%; height:100%; flex:1 1 auto; min-height: 0; gap:1px;}
 .sec4 .banner-group{display: flex; flex:1 1 auto; min-height: 0; overflow: hidden;}
-.sec4 .banner-group ul{display: flex; align-items: center; width:100%; height:100%;}
-.sec4 .banner-group:nth-child(1) ul{animation: sec4-voyage  25000ms linear infinite;}
-.sec4 .banner-group:nth-child(2) ul{animation: sec4-voyage2 25000ms linear infinite;}
-.sec4 .banner-group:nth-child(3) ul{animation: sec4-voyage  35000ms linear infinite;}
+.sec4 .banner-group ul{display: flex; width:100%; height:100%; opacity: .85;}
+.sec4 .banner-group:nth-child(1) ul{animation: sec4-voyage  35000ms linear infinite;}
+.sec4 .banner-group:nth-child(2) ul{animation: sec4-voyage2 50000ms linear infinite;}
+.sec4 .banner-group:nth-child(3) ul{animation: sec4-voyage  40000ms linear infinite;}
 @keyframes sec4-voyage { 0%{transform: translateX(0);} 100%{transform: translateX(-100%);} }
 @keyframes sec4-voyage2 { 0%{transform: translateX(-100%);} 100%{transform: translateX(0);} }
 .sec4 .banner-group ul:hover{animation-play-state: paused;}
-.sec4 .banner-group ul li{flex: 0 0 10%; padding:0 25px;}
-.sec4 .banner-group ul li a{display: flex; height:90px;}
+.sec4 .banner-group ul li{display: flex; align-items: center; flex: 0 0 10%; background: #fff; padding:0 25px;}
+.sec4 .banner-group ul li div{display: flex;}
+.sec4 .banner-group ul li img{height:auto;}
 
 

@@ -134,6 +134,7 @@ header .menu .site-map-btn:hover span:nth-child(2n){background: var(--dark-1000)
 
 .page-btn-group{position: fixed; right:30px; bottom:30px; display: flex; flex-direction: column; gap:15px;}
 .page-btn-group a{display: flex; align-items: center; justify-content: center; width:65px; height:65px; border:1px solid rgba(255, 255, 255, .5);; border-radius: 15px; font-size:32px; background: rgba(255, 255, 255, .1); backdrop-filter: blur(10px); transition: all .3s ease;}
+
 .page-btn-group a:hover{background: rgba(255, 255, 255, 1);}
 .page-btn-group a:hover i{color:var(--dark-0)}
 .page-btn-group a.off{opacity: .25; cursor: inherit;}
