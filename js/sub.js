@@ -136,6 +136,16 @@ $(function () {
         });
     });
 
+    $(".ci .sec1 .content-color .item").on("click", function () {
+        const text = $(this).find("span").text().trim();
+        if (!text) return;
+        navigator.clipboard.writeText(text).then(() => {
+            alert("복사되었습니다: " + text);
+        }).catch(() => {
+            console.error("복사 실패");
+        });
+    });
+
 
     /* ==========================================
        LOCATION 섹션 (stack-up effect + last longer)

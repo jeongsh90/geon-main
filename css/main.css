@@ -49,12 +49,12 @@
 .sec2 .content-list .link-wrap a:hover .more i{transform: translateX(10px);}
 
 .sec2 .content-list .hover-box{position: absolute; left:0; top:0; width:calc(100% - 10px); height:100% +10px; opacity: 0;}
-.sec2 .content-list .link-wrap > ul > li:nth-child(1) a{background: url("../img/bg01.jpg") no-repeat center right -175px / cover;}
+.sec2 .content-list .link-wrap > ul > li:nth-child(1) a{background: url("../img/bg01.png") no-repeat center right -175px / cover;}
 .sec2 .content-list .link-wrap > ul > li:nth-child(2) a{background: url("../img/bg03.jpg") no-repeat center / cover;}
 .sec2 .content-list .link-wrap > ul > li:nth-child(3) a{background: url("../img/bg08.jpg") no-repeat center / cover;}
 .sec2 .content-list .link-wrap > ul > li:nth-child(4) a{background: url("../img/bg09.jpg") no-repeat center right -175px / cover;}
 .sec2 .content-list .link-wrap > ul > li:nth-child(5) a{background: url("../img/bg10.jpg") no-repeat center right -175px / cover;}
-.sec2 .content-list .link-wrap > ul > li:nth-child(6) a{background: url("../img/bg11.jpg") no-repeat center / cover;}
+.sec2 .content-list .link-wrap > ul > li:nth-child(6) a{background: url("../img/bg04.jpg") no-repeat center / cover;}
 
 .sec3{height:100vh; padding:200px 0; position: relative;}
 .sec3 .container{display: flex; flex-direction: column; gap:75px; max-width:1540px; width:100%; height:100%; margin:0 auto;}

@@ -48,10 +48,15 @@
 .ci .sec1 .content-img img{width:50%}
 .ci .sec1 .content-txt{display: flex; gap:25px; width:100%; gap:100px;}
 .ci .sec1 .content-txt h3{width:360px;; padding:0 25px; font-size:42px; font-weight: 700; color:var(--blue-500);}
-.ci .sec1 .content-txt p{display: flex; flex-direction: column; width:calc(100% - 460px); font-size:24px; font-weight: 600;}
+.ci .sec1 .content-txt p{display: flex; flex-direction: column; justify-content: center; width:calc(100% - 460px); font-size:24px; font-weight: 600;}
 .ci .sec1 .color-system{display: flex; flex-direction: column; gap:50px; width:100%;}
 .ci .sec1 .content-color{display: flex; gap:25px; width:100%;}
-.ci .sec1 .content-color .item{display: flex; align-items: flex-end; aspect-ratio: 1; width:calc((100% - 150px) / 7); padding:25px; border-radius: 25px; font-size:18px; text-transform: uppercase;}
+.ci .sec1 .content-color .item{position: relative; display: flex; align-items: flex-end; aspect-ratio: 1; width:calc((100% - 150px) / 7); padding:25px; border-radius: 25px; font-size:18px; text-transform: uppercase; cursor: pointer;}
+.ci .sec1 .content-color .item::before{position: absolute; content:''; left:50%; top:50%; transform: translate(-50%,-50%); width:100%; height:100%; border:2px solid #fff; border-radius: 25px; opacity: 0; transition: all .3s ease;}
+.ci .sec1 .content-color .item::after{position: absolute; content:'코드 복사'; right:15px; top:15px; font-size:12px; opacity: .5; transition: all .3s ease;}
+.ci .sec1 .content-color .item:hover::before, .ci .sec1 .content-color .item:hover::after {opacity: 1;}
+
+
 .ci .sec1 .content-color .item:nth-child(1){background: #6bbce9;}
 .ci .sec1 .content-color .item:nth-child(2){background: #264fa1;}
 .ci .sec1 .content-color .item:nth-child(3){background: #29664e;}
@@ -59,7 +64,6 @@
 .ci .sec1 .content-color .item:nth-child(5){background: #32366a;}
 .ci .sec1 .content-color .item:nth-child(6){background: #6c6e70;}
 .ci .sec1 .content-color .item:nth-child(7){background: #221e1f;}
-
 
 
 
@@ -75,6 +79,14 @@
 .business .content-info .txt{display: flex; flex-direction: column; gap:25px;}
 .business .content-info .txt h3{font-size:54px; font-weight: 800;}
 .business .content-info .txt p{font-size:21px; opacity: .85;}
+.business01 .visual{background: #f90 url(../img/bg01.png) no-repeat center / cover;}
+.business02 .visual{background: #f70 url(../img/bg03.jpg) no-repeat center / cover;}
+.business03 .visual{background: #f50 url(../img/bg08.jpg) no-repeat center / cover;}
+.business04 .visual{background: #f30 url(../img/bg09.jpg) no-repeat center / cover;}
+.business05 .visual{background: #f10 url(../img/bg10.jpg) no-repeat center / cover;}
+.business06 .visual{background: #f05 url(../img/bg04.jpg) no-repeat center / cover;}
+
+
 
 .location .visual{position: relative; background: url("../img/bg14.jpg") no-repeat center / cover; overflow: hidden;}
 .sec-location { width: 100%; height: 100vh; margin-bottom:0; overflow: hidden; }
@@ -141,3 +153,6 @@
 .business06 .intro p span:nth-child(1){font-size:42px; margin:0;}
 .business06 .intro p span:nth-child(1)::before,
 .business06 .intro p span:nth-child(1)::after {display: none;}
+
+
+
